@@ -1,4 +1,7 @@
 #root {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   max-width: 1440px;
   text-align: center;
   background-image: url(../assets/background.png);
