@@ -1,0 +1,41 @@
+header {
+    background-color: rgba(14, 195, 216, 0.21);
+    padding: 0 2rem;
+}
+
+.logo {
+    height: 3em;
+}
+
+.nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+    &-div, &-list{
+        display: flex;
+        align-items: center;
+    }
+
+    &-div {
+        font-size: 32px;
+    }
+
+    &-list{
+        gap: 50px;
+        font-size: 40px;
+        list-style-type: none;
+
+        &__link{
+            color: white;
+            text-decoration: none;
+        
+        }
+
+        &__link.active {
+            text-decoration: underline;
+        }
+    }
+}
+
+
