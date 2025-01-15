@@ -22,6 +22,13 @@ function Header() {
                     </li>
                     <li>
                         <Link 
+                            to='/stories'
+                            className={`nav-list__link ${isActive('/stories') ? 'active' : ''}`}>
+                                Histoires
+                        </Link>
+                    </li>
+                    <li>
+                        <Link 
                             to='/universeandcharacters'
                             className={`nav-list__link ${isActive('/universeandcharacters') ? 'active' : ''}`}>
                                 Univers et Personnages
