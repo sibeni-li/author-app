@@ -6,7 +6,7 @@ function Home() {
         return (
             <div key={data.name} className='last-chapters--content'>
                 <h3>{data.name}</h3>
-                <p>{data.content}</p>
+                <p className='content'>{data.content}</p>
             </div>
         )
     });
