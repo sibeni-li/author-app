@@ -1,15 +1,8 @@
 import '../../styles/Home.scss'
-import data from '../../assets/stories.json'
+import Story from '../../components/Story';
 
 function Home() {
-    const lastChapters = data.map((data) => {
-        return (
-            <div key={data.name} className='last-chapters--content'>
-                <h3>{data.name}</h3>
-                <p className='content'>{data.content}</p>
-            </div>
-        )
-    });
+
     return (
         <div>
             <div className="banner div">
@@ -21,7 +14,7 @@ function Home() {
             <div className='div'>
                 <h2>Damnatus</h2>
                 <div className='last-chapters'>
-                    {lastChapters}
+                    <Story/>
                 </div>
             </div>
         </div>
