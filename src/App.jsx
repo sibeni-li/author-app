@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router';
 import Home from './pages/Home';
 import Stories from './pages/Stories';
+import Chapter from './pages/Chapter';
 import UniverseandCharacters from './pages/Universeandcharacters';
 import Flash from './pages/Flash';
 import About from './pages/About';
@@ -15,7 +16,8 @@ function App() {
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/stories/:id' element={<Stories/>}/>
+        <Route path='/stories/' element={<Stories/>}/>
+        <Route path='/chapter/:id' element={<Chapter/>}/>
         <Route path='/universeandcharacters' element={<UniverseandCharacters/>}/>
         {/* <Route path='/universeandcharacters/characters/:id'/> */}
         <Route path='/flash' element={<Flash/>}/>
