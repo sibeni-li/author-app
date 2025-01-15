@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import data from '../../assets/stories.json';
+import data from '../../../public/stories.json';
 import '../../styles/Stories.scss'
 
 function Stories() {
