@@ -26,8 +26,8 @@ h2 {
 .stories{
     display: flex;
     margin: 0 12.5%;
-    padding: 20px 0 ;
     gap: 70px;
+    padding: 20px 50px 50px 50px;
 }
 
 .chapter {
@@ -41,13 +41,13 @@ h2 {
     overflow: hidden;
     text-align: left;
     padding: 10px;
-
+    width: 100%;
 }
 
 .chapter h3 {
     text-align: center;
     font-size: 32px;
-    margin-bottom: 0;
+    margin: 15px;
 }
 
 .chapter-content{
