@@ -2,12 +2,16 @@ function getTypeLine(line) {
     const levelHeader = (line.match(/#/g) || []).length;
     if (line.startsWith('#') && line[levelHeader] === ' ' && levelHeader <= 6) {
         return 'Header';
+    } else if (line.startsWith('[!intro]: ')) {
+        return 'Intro';
     } else if (line.startsWith('[!lore]: ')) {
         return 'Lore';
     } else if (line.startsWith('[!past]: ')) {
         return 'Past';
     } else if (line.startsWith('[!dial]: ')) {
         return 'Dial';
+    } else if (line.startsWith('[!think]: ')) {
+        return 'Think';
     } else {
         return 'Paragraph';
     }
@@ -25,6 +29,11 @@ function loreConvert(mdText) {
     return `<p class="lore">${lore}</p>`;
 }
 
+function introConvert(mdText) {
+    const intro = mdText.replace('[!intro]: ', '');
+    return `<p class="intro">${intro}</p>`;
+}
+
 function pastConvert(mdText) {
     let past = mdText.replace('[!past]: ', '');
     past = past.replace(/\n/g, '</br>');
@@ -35,6 +44,11 @@ function dialConvert(mdText) {
     let dial = mdText.replace('[!dial]: ', '');
     dial = dial.replace(/\n/g, '</br></br>');
     return `<p class="dial">${dial}</p>`;
+}
+function thinkConvert(mdText) {
+    let think = mdText.replace('[!think]: ', '');
+    think = think.replace(/\n/g, '</br></br>');
+    return `<p class="think">${think}</p>`;
 }
 
 function boldConvert(mdText) {
@@ -71,12 +85,16 @@ function textConvert(inp) {
         switch(getTypeLine(o)) {
             case 'Header':
                 return headerConvert(o);
+            case 'Intro':
+                return introConvert(o);
             case 'Lore':
                 return loreConvert(o);
             case 'Past':
                 return pastConvert(o);
             case 'Dial':
                 return dialConvert(o);
+            case 'Think':
+                return thinkConvert(o);
             default:
                 return `<p>${o}</p>`;
         }
