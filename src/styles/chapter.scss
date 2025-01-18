@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Just+Me+Again+Down+Here&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Courgette&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Just+Me+Again+Down+Here&display=swap');
+
+.lore, .dial, .past, .intro, .think {
+    margin: 30px 0;
+}
+
+.intro {
+    font-family: 'Courgette';
+    text-align: center;
+} 
+
+.lore {
+    font-family: 'Amaranth';
+}
+
+.dial, .think {
+    font-family: 'Spectral';
+    font-style: italic;
+}
+
+.think {
+    text-align: end;
+}
+
+.past{
+    font-family: 'Architects Daughter';
+    text-align: center;
+}
