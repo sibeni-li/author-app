@@ -12,10 +12,7 @@ function Home() {
                 </div>
             </div>
             <div className='div'>
-                <h2>Damnatus</h2>
-                <div className='last-chapters'>
-                    <Story/>
-                </div>
+                <Story/>
             </div>
         </div>
     )

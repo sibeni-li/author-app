@@ -6,12 +6,14 @@ const Chapter = ({ chapter }) => {
   return (
     <div className="chapter">
       <h3>{chapter.name}</h3>
-      <div 
-        className="chapter-content"
-        dangerouslySetInnerHTML={{ 
-          __html: textConvert(chapter.content) 
-        }} 
-      />
+      <div className="chapter-content">
+        {chapter.content.map((content, i) => (
+          <div
+            key={i}
+            dangerouslySetInnerHTML={{ __html: textConvert(content)}} 
+          />
+        ))}
+      </div>
     </div>
   );
 };
@@ -19,7 +21,7 @@ const Chapter = ({ chapter }) => {
 Chapter.propTypes = {
   chapter: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    content: PropTypes.string.isRequired,
+    content: PropTypes.array.isRequired,
   }).isRequired,
 };
 
