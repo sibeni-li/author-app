@@ -25,8 +25,7 @@ h2 {
 
 .stories{
     display: flex;
-    margin: 0 12.5%;
-    gap: 70px;
+    gap: 50px;
     padding: 20px 50px 50px 50px;
 }
 
@@ -38,18 +37,16 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(50px);
     max-height: 1050px;
-    overflow: hidden;
     text-align: left;
-    padding: 10px;
+    padding: 35px;
     width: 100%;
-}
-
-.chapter h3 {
+    & h3 {
     text-align: center;
     font-size: 32px;
     margin: 15px;
-}
-
-.chapter-content{
-    font-size: 20px;
+    }
+    &-content{
+        overflow: hidden;
+        font-size: 20px;
+    }
 }
