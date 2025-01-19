@@ -1,7 +1,7 @@
 // src/components/Chapter/Chapter.jsx
 import { textConvert } from '../../markdownConverter.js';
 import PropTypes from 'prop-types';
-import '../../styles/chapter.scss'
+import '../../styles/Chapter.scss';
 
 const Chapter = ({ chapter }) => {
   return (

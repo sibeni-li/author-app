@@ -1,6 +1,6 @@
-import { Link, useLocation } from 'react-router';
-import LOGO from '../../assets/images/LOGO.png'
-import '../../styles/Header.scss'
+import { Link, useLocation } from 'react-router-dom';
+import LOGO from '../../assets/images/LOGO.png';
+import '../../styles/Header.scss';
 function Header() {
     const location = useLocation();
     const isActive = (path) => location.pathname === path;
@@ -51,6 +51,6 @@ function Header() {
                 </ul>
             </nav>
         </header>
-    )
+    );
 };
 export default Header;

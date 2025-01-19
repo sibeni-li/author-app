@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Stories from './pages/Stories';
 import Chapters from './pages/Chapters';
@@ -8,7 +8,7 @@ import About from './pages/About';
 import Error from './pages/Error';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import './styles/App.scss'
+import './styles/App.scss';
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
       </Routes>
       <Footer/>
     </Router>
-  )
-}
+  );
+};
 
 export default App;

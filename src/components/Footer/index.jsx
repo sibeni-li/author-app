@@ -1,5 +1,5 @@
-import LOGO from '../../assets/images/LOGO.png'
-import '../../styles/Footer.scss'
+import LOGO from '../../assets/images/LOGO.png';
+import '../../styles/Footer.scss';
 
 function Footer() {
     return (
@@ -8,6 +8,6 @@ function Footer() {
         <p>© 2024 M.S-Ramety</p>
         <p>Tous droits réservés</p>
     </footer>
-    )
+    );
 };
 export default Footer;
