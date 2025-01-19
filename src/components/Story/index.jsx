@@ -1,35 +1,10 @@
 import Chapter from "../../components/Chapter";
-import { useEffect, useState } from "react";
+import PropTypes from 'prop-types';
 
-function Story () {
-  const [stories, setStories] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    fetch('/src/stories.json')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        setStories(data);
-        setLoading(false);
-      })
-      .catch(error => {
-        setError(error.message);
-        setLoading(false);
-      });
-  }, []);
-
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
+function Story ({story}) {
 
   return (
     <div className="stories-div">
-      {stories.map(story => (
         <div key={story.id}>
           <h2>{story.title}</h2>
           <div className="stories">
@@ -38,9 +13,22 @@ function Story () {
           ))}
           </div>
         </div>
-      ))}
     </div>
   );
-  };
+};
+
+Story.propTypes = {
+  story: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    chapters: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        content: PropTypes.array.isRequired,
+      })
+    ).isRequired,
+  }).isRequired,
+};
 
 export default Story;
