@@ -1,7 +1,32 @@
-import '../../styles/Home.scss'
+import '../../styles/Home.scss';
 import Story from '../../components/Story';
+import { useEffect, useState } from "react";
 
 function Home() {
+    const [story, setStory] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+
+    useEffect(() => {
+        fetch('/src/stories.json')
+            .then(response => {
+                if (!response.ok) {
+                throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                setStory(data);
+                setLoading(false);
+            })
+            .catch(error => {
+                setError(error.message);
+                setLoading(false);
+            });
+    }, []);
+
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>Error: {error}</div>;
 
     return (
         <div>
@@ -12,9 +37,9 @@ function Home() {
                 </div>
             </div>
             <div className='div'>
-                <Story/>
+                <Story story={story}/>
             </div>
         </div>
-    )
+    );
 };
 export default Home;
