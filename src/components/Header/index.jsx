@@ -29,9 +29,9 @@ function Header() {
                     </li>
                     <li>
                         <Link 
-                            to='/universeandcharacters'
-                            className={`nav-list__link ${isActive('/universeandcharacters') ? 'active' : ''}`}>
-                                Univers et Personnages
+                            to='/characters'
+                            className={`nav-list__link ${isActive('/characters') ? 'active' : ''}`}>
+                                Personnages
                         </Link>
                     </li>
                     <li>
