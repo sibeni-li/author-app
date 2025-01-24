@@ -1,5 +1,6 @@
 import '../../styles/Home.scss';
 import Story from '../../components/Story';
+import Error from '../Error';
 import { useEffect, useState } from "react";
 
 function Home() {
@@ -26,7 +27,7 @@ function Home() {
     }, []);
 
     if (loading) return <div>Loading...</div>;
-    if (error) return <div>Error: {error}</div>;
+    if (error) return <Error/>;
 
     return (
         <div>

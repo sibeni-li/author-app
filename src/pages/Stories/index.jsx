@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../../styles/Stories.scss';
+import Error from '../Error';
 import { useEffect, useState } from "react";
 
 function Stories() {
@@ -27,7 +28,7 @@ function Stories() {
     }, []);
 
     if (loading) return <div>Loading...</div>;
-    if (error) return <div>Error: {error}</div>;
+    if (error) return <Error/>;
 
     const storyM = story.chapters.map((chapter) => chapter);
 

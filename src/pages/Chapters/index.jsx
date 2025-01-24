@@ -31,14 +31,14 @@ function Chapters() {
                 setError(error.message);
                 setLoading(false);
             });
-    }, [id]);
-
-    if (loading) return <div>Loading...</div>;
-    if (error) return <div>Error: {error}</div>;
+        }, [id]);
+        
+        if (loading) return <div>Loading...</div>;
+        if (error) return <Error/>
 
     return (
         <div className="read-chapter">
-            {chapter ? <Chapter chapter={chapter} /> : <Error />}
+            <Chapter chapter={chapter} />
         </div>
     );
 };
