@@ -1,0 +1,17 @@
+.error {
+    background-color: rgba(14, 195, 216, 0.21);
+    height: 72vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.error h1 {
+    font-size: 5em;
+    margin-bottom: 10%;
+}
+
+.error a {
+    color: white;
+    font-size: 2em;
+}
