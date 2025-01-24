@@ -9,7 +9,7 @@ function Stories() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('/src/stories.json')
+        fetch('/src/assets/data/stories.json')
             .then(response => {
                 if (!response.ok) {
                 throw new Error('Network response was not ok');
