@@ -2,6 +2,7 @@
     {
         "id": "0",
         "name": "Charly être absolu du monde des morts",
+        "img": "/src/assets/images/characters/Charly.jpg",
         "attributes": {
             "Prénom": "Charly (Viril, Fort)",
             "Sexe": "F",
@@ -29,8 +30,8 @@
     {
         "id": "1",
         "name": "Tian être absolu du monde des vivants",
+        "img": "/src/assets/images/characters/Tian.webp",
         "attributes": {
-
             "Prénom": "Tian",
             "Sexe": "M",
             "Âge": "42",
@@ -56,6 +57,7 @@
     {
         "id": "2",
         "name": "Rengu être absolu de l’entre-monde",
+        "img": "/src/assets/images/characters/Rengu1.webp",
         "attributes": {
             "Prénom": "Charly (Viril, Fort)",
             "Sexe": "F",
@@ -82,6 +84,7 @@
     {
         "id": "3",
         "name": "Alev Faucheuse de rang 3",
+        "img": "/src/assets/images/characters/Alev.jpg",
         "attributes": {
             "Prénom": "Charly (Viril, Fort)",
             "Sexe": "F",
@@ -108,6 +111,7 @@
     {
         "id": "4",
         "name": "Rosalie chef du quartier général",
+        "img": "/src/assets/images/characters/Rosalie.jpg",
         "attributes": {
             "Prénom": "Charly (Viril, Fort)",
             "Sexe": "F",
@@ -134,6 +138,7 @@
     {
         "id": "5",
         "name": "Vincent suprême du feu blanc",
+        "img": "/src/assets/images/characters/Vincent.avif",
         "attributes": {
             "Prénom": "Charly (Viril, Fort)",
             "Sexe": "F",
@@ -160,6 +165,7 @@
     {
         "id": "6",
         "name": "Zéphyr suprême des vents",
+        "img": "/src/assets/images/characters/Zéphyr.jpg",
         "attributes": {
             "Prénom": "Charly (Viril, Fort)",
             "Sexe": "F",
@@ -186,6 +192,7 @@
     {
         "id": "7",
         "name": "Idan prince impérial",
+        "img": "/src/assets/images/characters/Idan.webp",
         "attributes": {
             "Prénom": "Charly (Viril, Fort)",
             "Sexe": "F",
@@ -212,6 +219,7 @@
     {
         "id": "8",
         "name": "César quatuor de feu ardent",
+        "img": "/src/assets/images/characters/César.webp",
         "attributes": {
             "Prénom": "Charly (Viril, Fort)",
             "Sexe": "F",
@@ -238,6 +246,7 @@
     {
         "id": "9",
         "name": "Lisa maître de la nature",
+        "img": "/src/assets/images/characters/Lisa l'elfe.jpg",
         "attributes": {
             "Prénom": "Charly (Viril, Fort)",
             "Sexe": "F",
@@ -264,6 +273,7 @@
     {
         "id": "10",
         "name": "Zayne humain",
+        "img": "",
         "attributes": {
             "Prénom": "Charly (Viril, Fort)",
             "Sexe": "F",
@@ -290,6 +300,7 @@
     {
         "id": "11",
         "name": "Aaron quatuor du tonnerre",
+        "img": "/src/assets/images/characters/Aaron.jpg",
         "attributes": {
             "Prénom": "Charly (Viril, Fort)",
             "Sexe": "F",
