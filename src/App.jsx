@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Stories from './pages/Stories';
 import Chapters from './pages/Chapters';
-import Characters from './pages/Characters';
+import AllCharacters from './pages/AllCharacters';
+import OneCharacter from './pages/OneCharacter';
 import Flash from './pages/Flash';
 import About from './pages/About';
 import Error from './pages/Error';
@@ -18,8 +19,8 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/stories/' element={<Stories/>}/>
         <Route path='/chapters/:id' element={<Chapters/>}/>
-        <Route path='/characters' element={<Characters/>}/>
-        {/* <Route path='/universeandcharacters/characters/:id'/> */}
+        <Route path='/allcharacters' element={<AllCharacters/>}/>
+        <Route path='/onecharacter/:id' element={<OneCharacter/>}/>
         <Route path='/flash' element={<Flash/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/*' element={<Error/>}/>
