@@ -1,8 +1,14 @@
+.read-chapter {
+    padding: 50px;
+    background-color: rgba(14, 195, 216, 0.21);
+}
+
 .read-chapter .chapter{
-    max-height: 1550px;
+    min-height: 72vh;
 }
 
 .read-chapter .chapter-content {
     overflow: overlay;
-    max-width: 80%;
+    padding-right: 50px;
+    max-width: 60%;
 }
