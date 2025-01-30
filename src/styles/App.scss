@@ -4,5 +4,11 @@
   gap: 50px;
   max-width: 1440px;
   text-align: center;
-  background-image: url(../assets/images/background.png);
+  &.with-background {
+    min-height: 100vh;
+    background-image: url(../assets/images/background.png);
+    background-size: cover;
+    background-position: center;
+  }
 }
+
